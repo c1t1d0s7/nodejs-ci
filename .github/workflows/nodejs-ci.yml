@@ -46,7 +46,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: c1t1d0s7/nodejs-ci:latest
+        tags: c1t1d0s7/nodejs-ci:latest,c1t1d0s7/nodejs-ci:v1
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
