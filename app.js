@@ -6,7 +6,7 @@ const createError = require('http-errors');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.use('/', (req, res) => res.send('Hello World v3'));
+app.use('/', (req, res) => res.send('Hello World v4'));
 
 app.use((req, res, next) => {
   next(createError(404));
